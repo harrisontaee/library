@@ -1,1 +1,1 @@
-# algorithms
+# Computer Science
