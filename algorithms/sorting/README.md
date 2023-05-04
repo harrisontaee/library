@@ -1,6 +1,6 @@
 # Sorting
 
-Here are some sorting algorithms implemented in various languages (Just JavaScript for now). Included are time and memory complexities.
+An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time complexities and the [Algorithms README](/algorithms.README.md) for any confusion on file structure.
 
 | Name | Best | Average | Worst | Memory |
 |:----:|:----:|:-------:|:-----:| :----: |
@@ -19,4 +19,3 @@ Here are some sorting algorithms implemented in various languages (Just JavaScri
 | Comb | Ω(n log(n)) | Θ(n^2) | O(n^2) | O(1) |
 | Gnome | Ω(n) | Θ(n^2) | O(n^2) | O(1) |
 | Odd Even | Ω(n) | Θ(n^2) | O(n^2) | O(1) |
-
