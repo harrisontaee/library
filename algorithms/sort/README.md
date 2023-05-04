@@ -1,4 +1,4 @@
-# Sorting
+# Sort
 
 An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time complexities and [Algorithms](..) README.md for any confusion on file structure.
 
