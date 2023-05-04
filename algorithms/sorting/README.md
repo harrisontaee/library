@@ -1,10 +1,10 @@
 # Sorting
 
-An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time complexities and the [Algorithms README](/algorithms.README.md) for any confusion on file structure.
+An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time complexities and the [Algorithms README](..) for any confusion on file structure.
 
 | Name | Best | Average | Worst | Memory |
 |:----:|:----:|:-------:|:-----:| :----: |
-| [Quick](quick/) | Ω(n log(n)) | Θ(n log(n)) | O(n^2) | O(log(n)) |
+| [Quick](quick) | Ω(n log(n)) | Θ(n log(n)) | O(n^2) | O(log(n)) |
 | Merge | Ω(n log(n)) | Θ(n log(n)) | O(n log(n)) | O(n) |
 | Heap | Ω(n log(n)) | Θ(n log(n)) | O(n log(n)) | O(1) |
 | Insertion | Ω(n) | Θ(n^2) | O(n^2) | O(1) |
