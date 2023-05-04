@@ -16,4 +16,4 @@ Quick sort is a divide and conquer algorithm. It randomly picks an element as a 
 
 | Best | Average | Worst | Memory |
 |:----:|:-------:|:-----:| :----: |
-| nlog(n) | nlog(n) | $n^2$ | log(n) |
+| $nlog(n)$ | $nlog(n)$ | $n^2$ | $log(n)$ |
