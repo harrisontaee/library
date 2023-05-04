@@ -1,16 +1,16 @@
-import {defaultCompare} from "../utilities/js";
+import {defaultCompare} from "../utilities";
 
 /**
-	@callback compare - comparison function
-	@param {*} a - first element to compare
-	@param {*} b - second element to compare
-**/
+ * @callback compare - comparison function
+ * @param {*} a - first element to compare
+ * @param {*} b - second element to compare
+ */
 
 /**
-	@param {*[]} array - array to be sorted
-	@param {compare} [compare] - comparison function
-	@return {*[]}
-**/
+ * @param {*[]} array - array to be sorted
+ * @param {compare} [compare] - comparison function
+ * @return {*[]}
+ */
 
 export function quick (array, compare = defaultCompare) {
 	return (function sort(items, left, right) {

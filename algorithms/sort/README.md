@@ -5,7 +5,7 @@ An organised and practical collection of sorting algorithms implemented in multi
 | Name | Best | Average | Worst | Memory |
 |:----:|:----:|:-------:|:-----:| :----: |
 | [Quick](quick) | $nlog(n)$ | $nlog(n)$ | $n^2$ | $log(n)$ |
-| Merge | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $n$ |
+| [Merge](merge) | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $n$ |
 | Heap | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $1$ |
 | Insertion | $n$ | $n^2$ | $n^2$ | $1$ |
 | Tim | $n$ | $nlog(n)$ | $nlog(n)$ | $n$ |
