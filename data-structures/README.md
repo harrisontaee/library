@@ -1,1 +1,3 @@
 # Data Structures
+
+- [Heap](heap)

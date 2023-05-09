@@ -1,6 +1,6 @@
 # Sort
 
-An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time complexities and [Algorithms](..) README.md for any confusion on file structure.
+An organised and practical collection of sorting algorithms implemented in multiple languages. See the table below for a list of sorting algorithms and their respective time and space complexities. See [Algorithms](..) README.md for any confusion on file structure.
 
 | Name | Best | Average | Worst | Memory |
 |:----:|:----:|:-------:|:-----:| :----: |

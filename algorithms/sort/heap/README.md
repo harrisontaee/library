@@ -4,13 +4,13 @@ Heap sort is a comparison based sorting technique based on Binary Heap data stru
 
 ## Steps
 
-1. Build a max heap from the input data.
-2. Replace largest element (index 0) with the last item of the heap followed by reducing the size of heap by 1.
-3. Heapify the root of tree.
+1. Build a heap (min or max depending on sort direction) from the input data.
+2. Replace first element (largest or smallest) with the last item of the heap followed by reducing the size of heap by 1.
+3. Heapify down.
 4. Repeat above steps while size of heap is greater than 1.
 
 
-![Visualisation](https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif)
+![Visualisation](https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif)
 
 
 ## Complexity
