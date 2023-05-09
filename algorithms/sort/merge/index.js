@@ -1,18 +1,17 @@
-import {defaultCompare} from "../utilities";
+import {compare as defaultCompare} from "../../../utilities";
 
 /**
- * @callback compare - comparison function
- * @param {*} a - first element to compare
- * @param {*} b - second element to compare
+ * Merge Sort
+ * @param {*[]} array Array to be sorted
+ * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
+ * @returns {*[]}
+ * @description
+ - Best: nlogn
+ - Average: nlogn
+ - Worst: nlogn
+ - Memory: n
  */
-
-/**
- * @param {*[]} array - array to be sorted
- * @param {compare} [compare] - comparison function
- * @return {*[]}
- */
-
-export function merge (array, compare = defaultCompare) {
+export function merge(array, compare = defaultCompare) {
 	if (array.length === 1) return array;
 	
 	// halve array

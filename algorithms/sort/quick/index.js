@@ -1,18 +1,17 @@
-import {defaultCompare} from "../utilities";
+import {compare as defaultCompare} from "../../../utilities";
 
 /**
- * @callback compare - comparison function
- * @param {*} a - first element to compare
- * @param {*} b - second element to compare
+ * Quick Sort
+ * @param {*[]} array Array to be sorted
+ * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
+ * @returns {*[]}
+ * @description
+ - Best: nlogn
+ - Average: nlogn
+ - Worst: n^2
+ - Memory: logn
  */
-
-/**
- * @param {*[]} array - array to be sorted
- * @param {compare} [compare] - comparison function
- * @return {*[]}
- */
-
-export function quick (array, compare = defaultCompare) {
+export function quick(array, compare = defaultCompare) {
 	return (function sort(items, left, right) {
 		if (items.length <= 1) return items;
 
@@ -40,7 +39,6 @@ export function quick (array, compare = defaultCompare) {
 		// recurse on partitions
 		if (left < l - 1) sort(items, left, l - 1);
 		if (l < right) sort(items, l, right);
-
 		return items;
 	})(array, 0, array.length - 1);
 };

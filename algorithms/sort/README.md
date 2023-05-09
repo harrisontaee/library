@@ -6,7 +6,7 @@ An organised and practical collection of sorting algorithms implemented in multi
 |:----:|:----:|:-------:|:-----:| :----: |
 | [Quick](quick) | $nlog(n)$ | $nlog(n)$ | $n^2$ | $log(n)$ |
 | [Merge](merge) | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $n$ |
-| Heap | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $1$ |
+| [Heap](heap) | $nlog(n)$ | $nlog(n)$ | $nlog(n)$ | $n$ |
 | Insertion | $n$ | $n^2$ | $n^2$ | $1$ |
 | Tim | $n$ | $nlog(n)$ | $nlog(n)$ | $n$ |
 | Selection | $n^2$ | $n^2$ | $n^2$ | $1$ |
