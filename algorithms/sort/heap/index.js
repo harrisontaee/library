@@ -5,7 +5,7 @@ import {compare as defaultCompare} from "../../../utilities";
  * Heap Sort
  * @param {*[]} array Array to be sorted
  * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
- * @returns {*[]}
+ * @return {*[]}
  * @description
  - Best: nlogn
  - Average: nlogn

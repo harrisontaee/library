@@ -12,7 +12,7 @@ export class Heap {
 
 
 	/**
-	 * @returns {number} Size of the heap
+	 * @return {number} Size of the heap
 	 */
 	size() {
 		return this.heap.length;
@@ -22,7 +22,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {number} Index of the left child
+	 * @return {number} Index of the left child
 	 */
 	getLeftChildIndex(parentIndex) {
 		return (2 * parentIndex) + 1;
@@ -32,7 +32,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {number} Index of the left child
+	 * @return {number} Index of the left child
 	 */
 	getRightChildIndex(parentIndex) {
 		return (2 * parentIndex) + 2;
@@ -42,7 +42,7 @@ export class Heap {
 
 	/**
 	 * @param {number} childIndex Index of the child
-	 * @returns {number} Index of parent
+	 * @return {number} Index of parent
 	 */
 	getParentIndex(childIndex) {
 		return Math.floor((childIndex - 1) / 2);
@@ -52,7 +52,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {boolean}
+	 * @return {boolean}
 	 */
 	hasLeftChild(parentIndex) {
 		return this.getLeftChildIndex(parentIndex) < this.heap.length;
@@ -62,7 +62,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {boolean}
+	 * @return {boolean}
 	 */
 	hasRightChild(parentIndex) {
 		return this.getRightChildIndex(parentIndex) < this.heap.length;
@@ -72,7 +72,7 @@ export class Heap {
 
 	/**
 	 * @param {number} childIndex Index of the child
-	 * @returns {boolean}
+	 * @return {boolean}
 	 */
 	hasParent(childIndex) {
 		return this.getParentIndex(childIndex) >= 0;
@@ -82,7 +82,7 @@ export class Heap {
 
 	/**
 	 * @param {number} index Index of the element
-	 * @returns {*}
+	 * @return {*}
 	 */
 	get(index) {
 		return this.heap[index];
@@ -92,7 +92,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {*}
+	 * @return {*}
 	 */
 	getLeftChild(parentIndex) {
 		return this.get(this.getLeftChildIndex(parentIndex));
@@ -102,7 +102,7 @@ export class Heap {
 
 	/**
 	 * @param {number} parentIndex Index of the parent
-	 * @returns {*}
+	 * @return {*}
 	 */
 	getRightChild(parentIndex) {
 		return this.get(this.getRightChildIndex(parentIndex));
@@ -112,7 +112,7 @@ export class Heap {
 
 	/**
 	 * @param {number} childIndex Index of the child
-	 * @returns {*}
+	 * @return {*}
 	 */
 	getParent(childIndex) {
 		return this.get(this.getParentIndex(childIndex));
@@ -166,7 +166,7 @@ export class Heap {
 	/**
 	 * @param {*} firstItem First item to compare
 	 * @param {*} secondItem Second item to compare
-	 * @returns {boolean}
+	 * @return {boolean}
 	 */
 	pairIsInCorrectOrder(firstItem, secondItem) {
 		if (this.compare(firstItem, secondItem) >= 0) return true;
@@ -177,7 +177,7 @@ export class Heap {
 
 	/**
 	 * @param {*} item Item to find
-	 * @returns {Number[]} Indeces of the item
+	 * @return {Number[]} Indeces of the item
 	 */
 	find(item) {
 		const indices = [];
@@ -193,7 +193,7 @@ export class Heap {
 
 	/**
 	 * @param {*} item Item to add
-	 * @returns {Heap}
+	 * @return {Heap}
 	 */
 	add(item) {
 		this.heap.push(item);
@@ -205,7 +205,7 @@ export class Heap {
 
 	/**
 	 * @param {*} item Item to remove
-	 * @returns {Heap}
+	 * @return {Heap}
 	 */
 	remove(item) {
 		while (true) {

@@ -2,7 +2,7 @@
 /**
  * @param {*} a First item to compare
  * @param {*} b Second item to compare
- * @returns {number} 0 if equal, -1 if a < b, 1 if a > b
+ * @return {number} 0 if equal, -1 if a < b, 1 if a > b
  */
 export function compare(a, b) {
 	if (a === undefined && b === undefined) return 0;
@@ -24,7 +24,7 @@ export function compare(a, b) {
 
 /**
  * @param {*} item Item to convert
- * @returns {string}
+ * @return {string}
  */
 function toString(item) {
 	if (item === null) return "null";

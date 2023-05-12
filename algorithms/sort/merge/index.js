@@ -4,7 +4,7 @@ import {compare as defaultCompare} from "../../../utilities";
  * Merge Sort
  * @param {*[]} array Array to be sorted
  * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
- * @returns {*[]}
+ * @return {*[]}
  * @description
  - Best: nlogn
  - Average: nlogn
@@ -16,8 +16,8 @@ export function merge(array, compare = defaultCompare) {
 	
 	// halve array
 	const index = Math.floor(array.length / 2);
-	const right = merge(array.slice(index));
-	const left = merge(array.slice(0, index));
+	const right = merge(array.slice(index), compare);
+	const left = merge(array.slice(0, index), compare);
 
 	// merge halves
 	const sorted = [];
