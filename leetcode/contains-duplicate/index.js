@@ -3,5 +3,5 @@
  * @return {boolean}
  */
 function containsDuplicate(nums) {
-    return false;
+    return nums.length !== (new Set(nums)).size;
 };
