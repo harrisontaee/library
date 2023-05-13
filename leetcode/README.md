@@ -12,3 +12,4 @@ Solutions to leetcode problems.
 | [0238](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self](product-of-array-except-self) | Medium |
 | [0036](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](valid-sudoku) | Medium |
 | [0271](https://leetcode.com/problems/encode-and-decode-strings/) | [Encode and Decode Strings](encode-and-decode-strings) | Medium |
+| [0128](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](longest-consecutive-sequence) | Medium |
