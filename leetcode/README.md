@@ -10,3 +10,5 @@ Solutions to leetcode problems.
 | [0049](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](group-anagrams) | Medium |
 | [0347](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements](top-k-frequent-elements) | Medium |
 | [0238](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self](product-of-array-except-self) | Medium |
+| [0036](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](valid-sudoku) | Medium |
+| [0271](https://leetcode.com/problems/encode-and-decode-strings/) | [Encode and Decode Strings](encode-and-decode-strings) | Medium |
