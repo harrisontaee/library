@@ -1,6 +1,6 @@
 # Leetcode
 
-Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetcode.io) for an awesome stepwise guide!
+Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetcode.io) for his amazing algorithms course!
 
 
 ## Arrays & Hashing
@@ -21,5 +21,6 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 
 ## Two Pointers
 
-| Index | Title | Difficulty |
-| :---: | :---- | :--------: |
+| Title | Difficulty |
+| :---- | :--------: |
+| [Valid Palindrome](valid-palindrome) | [Easy](https://leetcode.com/problems/valid-palindrome/) |
