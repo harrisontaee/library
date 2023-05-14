@@ -24,3 +24,5 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | Title | Difficulty |
 | :---- | :--------: |
 | [Valid Palindrome](valid-palindrome) | [Easy](https://leetcode.com/problems/valid-palindrome/) |
+| [Two Sum 2](two-sum-2) | [Medium](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
+| [Three Sum](three-sum) | [Medium](https://leetcode.com/problems/3sum/) |
