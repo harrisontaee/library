@@ -1,9 +1,10 @@
 /**
+ * @link
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
  */
-function topKFrequent(nums, k) {
+export function topKFrequentElements(nums, k) {
 	let freqs = {};
 	for (let num of nums) freqs[num] = (freqs[num] || 0) + 1;
 	let array = [];

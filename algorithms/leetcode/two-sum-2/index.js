@@ -1,9 +1,10 @@
 /**
+ * @link https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
  * @param {number[]} numbers
  * @param {number} target
  * @return {number[]}
  */
-function twoSum(numbers, target) {
+export function twoSum2(numbers, target) {
     let i = 0, j = numbers.length - 1;
 	 while (i < j) {
 		const sum = numbers[i] + numbers[j];

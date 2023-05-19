@@ -1,8 +1,9 @@
 /**
+ * @link
  * @param {number[]} nums
  * @return {number[]}
  */
-function productExceptSelf(nums) { // O(n)
+export function productOfArrayExceptSelf(nums) { // O(n)
 	const answer = [];
 
 	let forwards = 1;

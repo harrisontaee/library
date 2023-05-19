@@ -1,8 +1,9 @@
 /**
+ * @link https://leetcode.com/problems/3sum/
  * @param {number[]} nums
  * @return {number[][]}
  */
-function threeSum(nums) {
+export function threeSum(nums) {
 	nums.sort((a, b) => a - b);
 	const result = [];
 

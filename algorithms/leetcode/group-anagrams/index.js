@@ -1,8 +1,9 @@
 /**
+ * @link https://leetcode.com/problems/group-anagrams/
  * @param {string[]} strs
  * @return {string[][]}
  */
-function groupAnagrams(strs) { // O(nk)
+export function groupAnagrams(strs) { // O(nk)
 	let keys = {};
 	for (let str of strs) {
 		let alphabet = new Array(26).fill(0);
@@ -14,4 +15,3 @@ function groupAnagrams(strs) { // O(nk)
 
 	return Object.values(keys);
 };
-

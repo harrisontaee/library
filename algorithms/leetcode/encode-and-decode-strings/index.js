@@ -21,12 +21,11 @@ const hex = {
 };
 
 /**
- * Encodes a list of strings to a single string.
- *
+ * @link
  * @param {string[]} strs
  * @return {string}
  */
-function encode(strs) {
+export function encode(strs) {
 	let code = "";
 	for (let str of strs) {
 		for (let char of str) {
@@ -43,12 +42,11 @@ function encode(strs) {
 
 
 /**
- * Decodes a single string to a list of strings.
- *
+ * @link https://leetcode.com/problems/encode-and-decode-strings/
  * @param {string} s
  * @return {string[]}
  */
-function decode(s) {
+export function decode(s) {
 	const words = [];
 	const strs = s.split("#");
 	for (let str of strs) {
@@ -58,8 +56,3 @@ function decode(s) {
 	};
 	return words;
 };
-
-/**
- * Your functions will be called as such:
- * decode(encode(strs));
- */

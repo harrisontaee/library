@@ -1,8 +1,9 @@
 /**
+ * @link https://leetcode.com/problems/longest-consecutive-sequence/
  * @param {number[]} nums
  * @return {number}
  */
-function longestConsecutive(nums) { // O(n)
+export function longestConsecutiveSequence(nums) { // O(n)
 	const set = new Set(nums);
 
 	let longest = 1;

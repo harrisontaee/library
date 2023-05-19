@@ -1,8 +1,9 @@
 /**
+ * @link https://leetcode.com/problems/trapping-rain-water/
  * @param {number[]} height
  * @return {number}
  */
-function trap(height) {
+export function trappingRainWater(height) {
     let l = 0, r = height.length - 1, area = 0;
 	 let maxLeft = 0, maxRight = 0;
 
