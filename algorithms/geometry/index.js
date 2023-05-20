@@ -13,34 +13,30 @@
  * @param {Point} d segment 2 point 2
  * @return {Point | null}
  */
-export function getSegmentIntersection(a, b, c, d) {
-	// ix: ax + (bx - ax)t = cx + (dx - cx)u
-	// iy: ay + (by - ay)t = cy + (dy - cy)u
+export function getSegmentsIntersection(a, b, c, d) {
+	// Ix => Ax+(Bx-Ax)t = Cx+(Dx-Cx)u
+	// Iy => Ay+(By-Ay)t = Cy+(Dy-Cy)u
 
-	// [ix: -cx, iy: -cy]
-	// ix: (ax - cx) + (bx - ax)t = (dx - cx)u
-	// iy: (ay - cy) + (by - ay)t = (dy - cy)u
-
-	// [iy: *(dx - cx)]
-	// iy: (ay - cy)(dy - cy) + (by - ay)(dy - cy)t = (dy - cy)(dx - cx)u
-
-	// [iy: sub (dx - cx)u]
-	// iy: (ay - cy)(dy - cy) + (by - ay)(dy - cy)t = (dy - cy)(ax - cx) + (dy - cy)(bx - ax)t;
+	// Ix => (Ax-Cx)+(Bx-Ax)t = (Dx-Cx)u
+	// Iy => (Ay-Cy)+(By-Ay)t = (Dy-Cy)u
 	
-	// [iy: - (ay - cy)(dy - cy) - (dy - cy)(bx - ax)t]
-	// iy: t((by - ay)(dy - cy) - (dy - cy)(bx - ax)) = (dy - cy)(ax - cx) - (ay - cy)(dy - cy)
+	// Iy => (Dx-Cx)(Ay-Cy)+(Dx-Cx)(By-Ay)t = (Dy-Cy)(Dx-Cx)u
+	// Iy => (Dx-Cx)(Ay-Cy)+(Dx-Cx)(By-Ay)t = (Dy-Cy)(Ax-Cx)+(Dy-Cy)(Bx-Ax)t
 
-	// [iy: /((by - ay)(dy - cy) - (dy - cy)(bx - ax))]
-	// iy: t = ((dy - cy)(ax - cx) - (ay - cy)(dy - cy)) / ((by - ay)(dy - cy) - (dy - cy)(bx - ax))
-
-	const upper = ((d.y - c.y) * (a.x - c.x) - (a.y - c.y) * (d.y - c.y));
-	const lower = ((b.y - a.y) * (d.y - c.y) - (d.y - c.y) * (b.x - a.x));
-
-	if (lower === 0) return null;
-
-	const t = upper / lower;
-	if (t < 0 || t > 1) return null;
+	// Iy => (Dx-Cx)(Ay-Cy)-(Dy-Cy)(Ax-Cx) = (Dy-Cy)(Bx-Ax)t-(Dx-Cx)(By-Ay)t
+	// Iy => ((Dx-Cx)(Ay-Cy)-(Dy-Cy)(Ax-Cx))/((Dy-Cy)(Bx-Ax)-(Dx-Cx)(By-Ay)) = t
 	
+	const tNumerator = ((d.x - c.x) * (a.y - c.y)) - ((d.y - c.y) * (a.x - c.x));
+	const uNumerator = ((c.y - a.y) * (a.x - b.x)) - ((c.x - a.x) * (a.y - b.y));
+	const denominator = ((d.y - c.y) * (b.x - a.x)) - ((d.x - c.x) * (b.y - a.y));
+
+	if (denominator === 0) return null;
+
+	const t = tNumerator / denominator;
+	const u = uNumerator / denominator;
+
+	if (t < 0 || t > 1 || u < 0 || u > 1) return null;
+
 	return {
 		x: interpolate(a.x, b.x, t),
 		y: interpolate(a.y, b.y, t)
