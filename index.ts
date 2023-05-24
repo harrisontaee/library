@@ -1,2 +1,4 @@
-export * from "./algorithms";
-export * from "./data-structures";
+export * as Algorithms from "./algorithms";
+export * as Colours from "./colours";
+export * as Geometry from "./geometry";
+export * as Structures from "./structures";

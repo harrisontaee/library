@@ -1,6 +1,6 @@
 # Heap Sort
 
-Heap sort is a comparison based sorting technique based on Binary [Heap](../../../data-structures/heap/) data structure.
+Heap sort is a comparison based sorting technique based on a Binary [Heap](../../../data-structures/heap/) data structure.
 
 ## Steps
 

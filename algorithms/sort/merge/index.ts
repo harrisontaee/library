@@ -15,7 +15,7 @@ export const merge = (array: any[], compare = defaultCompare) => {
 	const left = merge(array.slice(0, index), compare);
 
 	// merge halves
-	const sorted = [];
+	const sorted: any[] = [];
 	let l = 0, r = 0;
 	while (l < left.length || r < right.length) {
 		if (l >= left.length) {

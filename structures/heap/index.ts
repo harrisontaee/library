@@ -20,7 +20,7 @@ export class Heap {
 	hasParent = (childIndex: number): boolean => this.getParentIndex(childIndex) >= 0;
 	
 
-	get = (index: number) => this.heap[index];
+	get = (index: number): any => this.heap[index];
 	getLeftChild = (parentIndex: number) => this.get(this.getLeftChildIndex(parentIndex));
 	getRightChild = (parentIndex: number) => this.get(this.getRightChildIndex(parentIndex));
 	getParent = (childIndex: number) => this.get(this.getParentIndex(childIndex));
@@ -43,7 +43,7 @@ export class Heap {
 
 
 	heapifyDown = (index: number = 0) => {
-		let next = null;
+		let next: number | null = null;
 		while (this.hasLeftChild(index)) {
 			if (this.hasRightChild(index) && this.pairIsInCorrectOrder(this.getRightChild(index), this.getLeftChild(index))) next = this.getLeftChildIndex(index);
 			else next = this.getRightChildIndex(index);
