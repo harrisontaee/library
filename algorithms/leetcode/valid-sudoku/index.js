@@ -3,7 +3,7 @@
  * @param {string[][]} board
  * @return {boolean}
  */
-export function isValidSudoku(board) { // O(n)
+export const isValidSudoku = (board) => { // O(n)
 	const rows = [];
 	const cols = [];
 	const boxs = [];

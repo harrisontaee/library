@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-export function productOfArrayExceptSelf(nums) { // O(n)
+export const productOfArrayExceptSelf = (nums) => { // O(n)
 	const answer = [];
 
 	let forwards = 1;

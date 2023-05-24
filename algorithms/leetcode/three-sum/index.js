@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-export function threeSum(nums) {
+export const threeSum = (nums) => {
 	nums.sort((a, b) => a - b);
 	const result = [];
 

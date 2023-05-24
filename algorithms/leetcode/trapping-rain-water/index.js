@@ -3,7 +3,7 @@
  * @param {number[]} height
  * @return {number}
  */
-export function trappingRainWater(height) {
+export const trappingRainWater = (height) => {
     let l = 0, r = height.length - 1, area = 0;
 	 let maxLeft = 0, maxRight = 0;
 

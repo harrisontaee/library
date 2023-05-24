@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-export function longestConsecutiveSequence(nums) { // O(n)
+export const longestConsecutiveSequence = (nums) => { // O(n)
 	const set = new Set(nums);
 
 	let longest = 1;

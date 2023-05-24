@@ -3,7 +3,7 @@
  * @param {number[]} height
  * @return {number}
  */
-export function containerWithMostWater(height) {
+export const containerWithMostWater = (height) => {
 	let l = 0, r = height.length - 1, max = 0;
 	while (l < r) {
 		let left = height[l], right = height[r];

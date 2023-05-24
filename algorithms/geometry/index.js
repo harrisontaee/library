@@ -1,19 +1,28 @@
 /**
- * Point
  * @typedef {Object} Point
  * @property {number} x
  * @property {number} y
  */
 /**
- * Get Intersection
- * @description Given segments (a, b) and (c, d), get the intersection.
+ * @param {number} a
+ * @param {number} b
+ * @param {number} t 0 >= t <= 1
+ * @return {number}
+ */
+export const interpolate = (a, b, t) => a + ((b - a) * t);
+
+
+
+
+
+/**
  * @param {Point} a segment 1 point 1
  * @param {Point} b segment 1 point 2
  * @param {Point} c segment 2 point 1
  * @param {Point} d segment 2 point 2
  * @return {Point | null}
  */
-export function getSegmentsIntersection(a, b, c, d) {
+export const getSegmentsIntersection = (a, b, c, d) => {
 	// Ix => Ax+(Bx-Ax)t = Cx+(Dx-Cx)u
 	// Iy => Ay+(By-Ay)t = Cy+(Dy-Cy)u
 
@@ -41,17 +50,4 @@ export function getSegmentsIntersection(a, b, c, d) {
 		x: interpolate(a.x, b.x, t),
 		y: interpolate(a.y, b.y, t)
 	};
-};
-
-
-
-/**
- * Interpolate
- * @param {number} a
- * @param {number} b
- * @param {number} t 0 >= t <= 1
- * @return {number}
- */
-function interpolate(a, b, t) {
-	return a + ((b - a) * t);
 };

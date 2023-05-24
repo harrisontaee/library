@@ -4,3 +4,17 @@ An organised and practical collection of intriguing concepts and findings curate
 
 - [Algorithms](algorithms)
 - [Data Structures](data-structures)
+
+
+## TODO
+### Implement
+- Algorithms
+	- Lexorank
+	- CRDT/OT
+### Learn
+- Compression
+- Cryptography
+- Machine Learning
+- Languages
+	- Rust
+	- C(++)

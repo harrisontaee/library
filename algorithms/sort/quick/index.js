@@ -11,7 +11,7 @@ import {compare as defaultCompare} from "../../../utilities";
  - Worst: n^2
  - Memory: logn
  */
-export function quick(array, compare = defaultCompare) {
+export const quick = (array, compare = defaultCompare) => {
 	return (function sort(items, left, right) {
 		if (items.length <= 1) return items;
 

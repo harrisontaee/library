@@ -4,7 +4,7 @@
  * @param {number} target
  * @return {number[]}
  */
-export function twoSum2(numbers, target) {
+export const twoSum2 = (numbers, target) => {
     let i = 0, j = numbers.length - 1;
 	 while (i < j) {
 		const sum = numbers[i] + numbers[j];

@@ -25,7 +25,7 @@ const hex = {
  * @param {string[]} strs
  * @return {string}
  */
-export function encode(strs) {
+export const encode = (strs) => {
 	let code = "";
 	for (let str of strs) {
 		for (let char of str) {
@@ -46,7 +46,7 @@ export function encode(strs) {
  * @param {string} s
  * @return {string[]}
  */
-export function decode(s) {
+export const decode = (s) => {
 	const words = [];
 	const strs = s.split("#");
 	for (let str of strs) {

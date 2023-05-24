@@ -11,7 +11,7 @@ import {compare as defaultCompare} from "../../../utilities";
  - Worst: nlogn
  - Memory: n
  */
-export function merge(array, compare = defaultCompare) {
+export const merge = (array, compare = defaultCompare) => {
 	if (array.length === 1) return array;
 	
 	// halve array

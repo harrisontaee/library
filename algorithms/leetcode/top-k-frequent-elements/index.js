@@ -4,7 +4,7 @@
  * @param {number} k
  * @return {number[]}
  */
-export function topKFrequentElements(nums, k) {
+export const topKFrequentElements = (nums, k) => {
 	let freqs = {};
 	for (let num of nums) freqs[num] = (freqs[num] || 0) + 1;
 	let array = [];

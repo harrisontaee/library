@@ -12,7 +12,7 @@ import {compare as defaultCompare} from "../../../utilities";
  - Worst: nlogn
  - Memory: 1
  */
-export function heap(array, compare = defaultCompare) {
+export const heap = (array, compare = defaultCompare) => {
 	// build max heap
 	const heap = new Heap(compare);
 	array.forEach(item => heap.add(item));

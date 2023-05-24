@@ -4,7 +4,7 @@
  * @param {string} t
  * @return {boolean}
  */
-export function isValidAnagram(s, t) { // O(s + t)
+export const isValidAnagram = (s, t) => { // O(s + t)
 	const letters = {};
 	for (let char of s) { // O(s)
 		if (char in letters) letters[char]++;
