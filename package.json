@@ -1,6 +1,6 @@
 {
   "name": "@harrisontaee/library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An organised and practical collection of intriguing concepts and findings.",
   "main": "index.js",
   "scripts": {
