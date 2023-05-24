@@ -1,10 +1,10 @@
-
 /**
- * @param {*} a First item to compare
- * @param {*} b Second item to compare
- * @return {number} 0 if equal, -1 if a < b, 1 if a > b
+ * Lexographical comparison of two items
+ - a > b => 1
+ - a = b => 0
+ - a < b => -1
  */
-export function compare(a, b) {
+export const compare = (a: any, b: any): number => {
 	if (a === undefined && b === undefined) return 0;
 	if (a === undefined) return 1;
 	if (b === undefined) return -1;
@@ -22,11 +22,7 @@ export function compare(a, b) {
 
 
 
-/**
- * @param {*} item Item to convert
- * @return {string}
- */
-function toString(item) {
+const toString = (item: any): string => {
 	if (item === null) return "null";
 	if (typeof item === "boolean" || typeof item === "number") return (item).toString();
 	if (typeof item === "string") return item;

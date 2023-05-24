@@ -1,10 +1,7 @@
 /**
  * @link https://leetcode.com/problems/valid-anagram/
- * @param {string} s
- * @param {string} t
- * @return {boolean}
  */
-export const isValidAnagram = (s, t) => { // O(s + t)
+export const isValidAnagram = (s: string, t: string): boolean => { // O(s + t)
 	const letters = {};
 	for (let char of s) { // O(s)
 		if (char in letters) letters[char]++;
@@ -18,4 +15,4 @@ export const isValidAnagram = (s, t) => { // O(s + t)
 	}
 
 	return true;
-}
+};

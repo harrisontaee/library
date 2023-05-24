@@ -1,17 +1,12 @@
 import {compare as defaultCompare} from "../../../utilities";
 
 /**
- * Merge Sort
- * @param {*[]} array Array to be sorted
- * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
- * @return {*[]}
- * @description
  - Best: nlogn
  - Average: nlogn
  - Worst: nlogn
  - Memory: n
  */
-export const merge = (array, compare = defaultCompare) => {
+export const merge = (array: any[], compare = defaultCompare) => {
 	if (array.length === 1) return array;
 	
 	// halve array

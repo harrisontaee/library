@@ -1,17 +1,12 @@
 import {compare as defaultCompare} from "../../../utilities";
 
 /**
- * Quick Sort
- * @param {*[]} array Array to be sorted
- * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
- * @return {*[]}
- * @description
  - Best: nlogn
  - Average: nlogn
  - Worst: n^2
  - Memory: logn
  */
-export const quick = (array, compare = defaultCompare) => {
+export const quick = (array: any[], compare = defaultCompare) => {
 	return (function sort(items, left, right) {
 		if (items.length <= 1) return items;
 

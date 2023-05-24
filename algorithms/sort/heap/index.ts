@@ -2,17 +2,12 @@ import {Heap} from "../../../data-structures/heap";
 import {compare as defaultCompare} from "../../../utilities";
 
 /**
- * Heap Sort
- * @param {*[]} array Array to be sorted
- * @param {function} [compare] Comparison function (see {@link defaultCompare compare})
- * @return {*[]}
- * @description
  - Best: nlogn
  - Average: nlogn
  - Worst: nlogn
  - Memory: 1
  */
-export const heap = (array, compare = defaultCompare) => {
+export const heap = (array: any[], compare = defaultCompare) => {
 	// build max heap
 	const heap = new Heap(compare);
 	array.forEach(item => heap.add(item));

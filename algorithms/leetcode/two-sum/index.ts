@@ -1,10 +1,7 @@
 /**
  * @link https://leetcode.com/problems/two-sum/
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
  */
-export const twoSum = (nums, target) => { // O(n)
+export const twoSum = (nums: number[], target: number): number[] => { // O(n)
 	const numbers = {};
 	for (let i = 0; i < nums.length; i++) { // O(n)
 		const remainder = target - nums[i];

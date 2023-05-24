@@ -1,9 +1,7 @@
 /**
  * @link https://leetcode.com/problems/valid-sudoku/
- * @param {string[][]} board
- * @return {boolean}
  */
-export const isValidSudoku = (board) => { // O(n)
+export const isValidSudoku = (board: string[][]): boolean => { // O(n)
 	const rows = [];
 	const cols = [];
 	const boxs = [];

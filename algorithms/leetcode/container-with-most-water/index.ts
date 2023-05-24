@@ -1,9 +1,7 @@
 /**
  * @link https://leetcode.com/problems/container-with-most-water/
- * @param {number[]} height
- * @return {number}
  */
-export const containerWithMostWater = (height) => {
+export const containerWithMostWater = (height: number[]): number => {
 	let l = 0, r = height.length - 1, max = 0;
 	while (l < r) {
 		let left = height[l], right = height[r];
@@ -13,4 +11,3 @@ export const containerWithMostWater = (height) => {
 	};
 	return max;
 };
-

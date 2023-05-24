@@ -1,8 +1,4 @@
-/**
- * @param {string} hex hex string
- * @return {number[]} rgb array
- */
-export const hexToRgb = (hex) => {
+export const hexToRgb = (hex: string): number[] => {
 	const rgb = [
 		parseInt(hex.substring(1, 3), 16),
 		parseInt(hex.substring(3, 5), 16),
@@ -15,11 +11,9 @@ export const hexToRgb = (hex) => {
 
 
 
-/**
- * @param {number[]} rgb rgb array
- * @return {string} hex string
- */
-export const rgbToHex = (rgb) => {
+
+
+export const rgbToHex = (rgb: number[]): string => {
 	let hex = '#';
 
 	for (let i = 0; i < Math.min(rgb.length, 4); i++) {

@@ -1,9 +1,7 @@
 /**
- * @link
- * @param {number[]} nums
- * @return {number[]}
+ * @link https://leetcode.com/problems/product-of-arry-except-self
  */
-export const productOfArrayExceptSelf = (nums) => { // O(n)
+export const productOfArrayExceptSelf = (nums: number[]): number[] => { // O(n)
 	const answer = [];
 
 	let forwards = 1;

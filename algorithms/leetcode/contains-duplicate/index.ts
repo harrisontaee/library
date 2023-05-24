@@ -3,6 +3,4 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-export const containsDuplicate = (nums) => { // O(n)
-	return nums.length !== new Set(nums).size;
-}
+export const containsDuplicate = (nums: number[]): boolean => nums.length !== new Set(nums).size; // O(n)

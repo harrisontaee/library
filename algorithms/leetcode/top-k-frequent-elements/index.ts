@@ -1,10 +1,7 @@
 /**
- * @link
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
+ * @link https://leetcode.com/problems/top-k-frequent-elements
  */
-export const topKFrequentElements = (nums, k) => {
+export const topKFrequentElements = (nums: number[], k: number): number[] => {
 	let freqs = {};
 	for (let num of nums) freqs[num] = (freqs[num] || 0) + 1;
 	let array = [];
