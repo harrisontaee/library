@@ -34,11 +34,6 @@ export interface Rectangle extends Point {
 
 
 
-export type Segment = [Point, Point];
-
-
-
-
 
 export const interpolate = (a: number, b: number, t: number): number => {
 	return a + ((b - a) * t);
@@ -48,7 +43,7 @@ export const interpolate = (a: number, b: number, t: number): number => {
 
 
 
-export const distanceBetweenPoints = (p1: Point, p2: Point): number => {
+export const getDistanceBetweenPoints = (p1: Point, p2: Point): number => {
 	return Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
 };
 
@@ -57,7 +52,7 @@ export const distanceBetweenPoints = (p1: Point, p2: Point): number => {
 
 
 export const pointInsideCircle = (p: Point, c: Circle): boolean => {
-	return distanceBetweenPoints(p, c) <= c.r;
+	return getDistanceBetweenPoints(p, c) <= c.r;
 };
 
 
@@ -75,12 +70,9 @@ export const pointInsideRectangle = (p: Point, r: Rectangle): boolean => (
 
 
 /**
- * @returns {Point | null} the intersection point between the two segments or null if they don't intersect
+ * @returns {Point | null} the intersection point between the two segments (a, b) and (c, d) or null if they don't intersect
  */
-export const getSegmentsIntersection = (s1: Segment, s2: Segment): Point | null => {
-	const [a, b] = s1,
-			[c, d] = s2;
-
+export const getSegmentsIntersection = (a: Point, b: Point, c: Point, d: Point): Point | null => {
 	const tNumerator = ((d.x - c.x) * (a.y - c.y)) - ((d.y - c.y) * (a.x - c.x));
 	const uNumerator = ((c.y - a.y) * (a.x - b.x)) - ((c.x - a.x) * (a.y - b.y));
 	const denominator = ((d.y - c.y) * (b.x - a.x)) - ((d.x - c.x) * (b.y - a.y));
@@ -102,17 +94,19 @@ export const getSegmentsIntersection = (s1: Segment, s2: Segment): Point | null 
 
 
 
-export const getDistanceBetweenSegmentAndPoint = (s: Segment, p: Point): number => {
-	const [a, b] = s;
+/**
+ * get the distance between point p and segment (a, b)
+ */
+export const getDistanceBetweenPointAndSegment = (p: Point, a: Point, b: Point): number => {
 	const t = -(((a.x - p.x) * (b.x - a.x)) + ((b.y - a.y) * (a.y - p.y))) / (((b.y - a.y) ** 2) + ((b.x - a.x) ** 2));
 	console.log("t:", t);
 	const i = {
 		x: a.x + (b.x - a.x) * t,
 		y: a.y + (b.y - a.y) * t
 	};
-	if (t >= 0 && t <= 1) return distanceBetweenPoints(i, p);
+	if (t >= 0 && t <= 1) return getDistanceBetweenPoints(i, p);
 	return Math.min(
-		distanceBetweenPoints(a, p),
-		distanceBetweenPoints(b, p)
+		getDistanceBetweenPoints(a, p),
+		getDistanceBetweenPoints(b, p)
 	);
 };
