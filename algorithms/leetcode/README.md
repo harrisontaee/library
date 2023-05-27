@@ -1,6 +1,6 @@
 # Leetcode
 
-Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetcode.io) for his amazing algorithms course!
+Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetcode.io) for his amazing algorithms course and roadmap!
 
 
 ## Arrays & Hashing
@@ -28,3 +28,11 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Three Sum](three-sum) | [Medium](https://leetcode.com/problems/3sum/) |
 | [Container With Most Water](container-with-most-water) | [Medium](https://leetcode.com/problems/container-with-most-water/) |
 | [Trapping Rain Water](trapping-rain-water) | [Hard](https://leetcode.com/problems/trapping-rain-water/) |
+
+
+## Stacks
+
+| Title | Difficulty |
+| :---- | :--------: |
+| [Valid Parentheses](valid-parentheses) | [Easy](https://leetcode.com/problems/valid-parentheses/) |
+| [Min Stack](min-stack) | [Medium](https://leetcode.com/problems/min-stack/) |

@@ -99,12 +99,13 @@ export const getSegmentsIntersection = (a: Point, b: Point, c: Point, d: Point):
  */
 export const getDistanceBetweenPointAndSegment = (p: Point, a: Point, b: Point): number => {
 	const t = -(((a.x - p.x) * (b.x - a.x)) + ((b.y - a.y) * (a.y - p.y))) / (((b.y - a.y) ** 2) + ((b.x - a.x) ** 2));
-	console.log("t:", t);
 	const i = {
 		x: a.x + (b.x - a.x) * t,
 		y: a.y + (b.y - a.y) * t
 	};
+
 	if (t >= 0 && t <= 1) return getDistanceBetweenPoints(i, p);
+	
 	return Math.min(
 		getDistanceBetweenPoints(a, p),
 		getDistanceBetweenPoints(b, p)

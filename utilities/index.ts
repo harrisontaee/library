@@ -9,12 +9,17 @@ export const compare = (a: any, b: any): number => {
 	if (a === undefined) return 1;
 	if (b === undefined) return -1;
 
+	if (typeof a === "number" && typeof b === "number") {
+		if (a < b) return -1;
+		if (a > b) return 1;
+		return 0;
+	};
+
 	const aStr = toString(a);
 	const bStr = toString(b);
 
 	if (aStr < bStr) return -1;
 	if (aStr > bStr) return 1;
-
 	return 0;
 };
 
