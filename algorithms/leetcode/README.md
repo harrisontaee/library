@@ -36,3 +36,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | :---- | :--------: |
 | [Valid Parentheses](valid-parentheses) | [Easy](https://leetcode.com/problems/valid-parentheses/) |
 | [Min Stack](min-stack) | [Medium](https://leetcode.com/problems/min-stack/) |
+| [Evaluate Reverse Polish Notation](evaluate-reverse-polish-notation) | [Medium](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
