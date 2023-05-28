@@ -1,6 +1,8 @@
 export * from "./container-with-most-water";
 export * from "./contains-duplicate";
 export * from "./encode-and-decode-strings";
+export * from "./evaluate-reverse-polish-notation";
+export * from "./generate-parentheses";
 export * from "./group-anagrams";
 export * from "./longest-consecutive-sequence";
 export * from "./product-of-array-except-self";
@@ -10,5 +12,6 @@ export * from "./trapping-rain-water";
 export * from "./two-sum";
 export * from "./two-sum-2";
 export * from "./valid-anagram";
+export * from "./valid-parentheses";
 export * from "./valid-palindrome";
 export * from "./valid-sudoku";

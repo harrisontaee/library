@@ -2,7 +2,7 @@ const Open = new Set<string>(['(', '[', '{']);
 const Closed = new Set<string>([')', ']', '}']);
 
 
-const isValidParentheses = (str: string): boolean => {
+export const isValidParentheses = (str: string): boolean => {
 	const opened: number[] = [];
 	
 	for (let i = 0; i < str.length; i++) {
