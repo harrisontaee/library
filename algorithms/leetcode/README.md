@@ -38,3 +38,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Min Stack](min-stack) | [Medium](https://leetcode.com/problems/min-stack/) |
 | [Evaluate Reverse Polish Notation](evaluate-reverse-polish-notation) | [Medium](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
 | [Generate Parentheses](generate-parentheses) | [Medium](https://leetcode.com/problems/generate-parentheses/) |
+| [Daily Temperatures](daily-temperatures) | [Medium](https://leetcode.com/problems/daily-temperatures/) |

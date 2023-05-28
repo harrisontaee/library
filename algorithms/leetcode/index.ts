@@ -1,5 +1,6 @@
 export * from "./container-with-most-water";
 export * from "./contains-duplicate";
+export * from "./daily-temperatures";
 export * from "./encode-and-decode-strings";
 export * from "./evaluate-reverse-polish-notation";
 export * from "./generate-parentheses";
