@@ -7,6 +7,7 @@ export * from "./encode-and-decode-strings";
 export * from "./evaluate-reverse-polish-notation";
 export * from "./generate-parentheses";
 export * from "./group-anagrams";
+export * from "./koko-eating-bananas";
 export * from "./largest-rectangle-in-histogram";
 export * from "./longest-consecutive-sequence";
 export * from "./product-of-array-except-self";

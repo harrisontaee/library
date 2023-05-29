@@ -49,3 +49,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | :---- | :--------: |
 | [Binary Search](binary-search) | [Easy](https://leetcode.com/problems/binary-search/) |
 | [Search a 2D Matrix](search-a-2d-matrix) | [Medium](https://leetcode.com/problems/search-a-2d-matrix/) |
+| [Koko Eating Bananas](koko-eating-bananas) | [Medium](https://leetcode.com/problems/koko-eating-bananas/) |
