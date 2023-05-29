@@ -13,7 +13,7 @@ export const binarySearch = (
 
 		if (comp === 0) return mid;
 		else if (comp < 0) left = mid + 1;
-		else right = mid - 1;
+		else right = mid;
 	};
 
 	return !compare(nums[left], target) ? left : -1;
