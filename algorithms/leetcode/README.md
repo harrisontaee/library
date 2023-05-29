@@ -40,3 +40,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Generate Parentheses](generate-parentheses) | [Medium](https://leetcode.com/problems/generate-parentheses/) |
 | [Daily Temperatures](daily-temperatures) | [Medium](https://leetcode.com/problems/daily-temperatures/) |
 | [Car Fleet](car-fleet) | [Medium](https://leetcode.com/problems/car-fleet/) |
+| [Larget Rectangle in Histogram](largest-rectangle-in-histogram) | [Hard](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
