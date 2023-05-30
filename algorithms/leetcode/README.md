@@ -34,3 +34,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Search a 2D Matrix](search-a-2d-matrix) | [Medium](https://leetcode.com/problems/search-a-2d-matrix/) |
 | [Koko Eating Bananas](koko-eating-bananas) | [Medium](https://leetcode.com/problems/koko-eating-bananas/) |
 | [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
+| [Search in Rotated Sorted Array](search-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
