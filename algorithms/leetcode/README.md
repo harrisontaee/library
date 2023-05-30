@@ -35,3 +35,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Koko Eating Bananas](koko-eating-bananas) | [Medium](https://leetcode.com/problems/koko-eating-bananas/) |
 | [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
 | [Search in Rotated Sorted Array](search-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
+| [Time Based Key-Value Store](time-based-key-value-store) | [Medium](https://leetcode.com/problems/time-based-key-value-store/) |

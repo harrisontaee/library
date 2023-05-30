@@ -14,6 +14,7 @@ export * from "./longest-consecutive-sequence";
 export * from "./product-of-array-except-self";
 export * from "./search-in-rotated-sorted-array";
 export * from "./three-sum";
+export * from "./time-based-key-value-store";
 export * from "./top-k-frequent-elements";
 export * from "./trapping-rain-water";
 export * from "./two-sum";
