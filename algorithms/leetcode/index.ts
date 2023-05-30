@@ -5,6 +5,7 @@ export * from "./contains-duplicate";
 export * from "./daily-temperatures";
 export * from "./encode-and-decode-strings";
 export * from "./evaluate-reverse-polish-notation";
+export * from "./find-minimum-from-rotated-sorted-array";
 export * from "./generate-parentheses";
 export * from "./group-anagrams";
 export * from "./koko-eating-bananas";
