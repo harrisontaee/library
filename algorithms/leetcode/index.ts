@@ -11,6 +11,7 @@ export * from "./group-anagrams";
 export * from "./koko-eating-bananas";
 export * from "./largest-rectangle-in-histogram";
 export * from "./longest-consecutive-sequence";
+export * from "./median-of-two-sorted-arrays";
 export * from "./product-of-array-except-self";
 export * from "./search-in-rotated-sorted-array";
 export * from "./three-sum";

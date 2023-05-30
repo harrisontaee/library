@@ -36,3 +36,4 @@ Solutions to miscellaneous leetcode problems. Kudos to [Neetcode](https://neetco
 | [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
 | [Search in Rotated Sorted Array](search-in-rotated-sorted-array) | [Medium](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
 | [Time Based Key-Value Store](time-based-key-value-store) | [Medium](https://leetcode.com/problems/time-based-key-value-store/) |
+| [Median of Two Sorted Arrays](median-of-two-sorted-arrays) | [Hard](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
