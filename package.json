@@ -1,19 +1,16 @@
 {
   "name": "@harrisontaee/library",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An organised and practical collection of intriguing concepts and findings.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.ts",
+  "author": "Harrison Taee <harrisontaee@protonmail.com> (https://github.com/harrisontaee)",
+  "license": "MIT",
+  "homepage": "https://github.com/harrisontaee/library#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harrisontaee/library.git"
   },
-  "author": "Harrison Taee",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/harrisontaee/library/issues"
-  },
-  "homepage": "https://github.com/harrisontaee/library#readme"
+  }
 }
