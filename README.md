@@ -6,17 +6,17 @@ An organised and practical collection of intriguing concepts and findings curate
 - [Colours](colours)
 - [Geometry](geometry)
 - [Structures](structures)
+- [Utilities](utilities)
 
 
-## TODO
-### Implement
+### ToDo
 - Algorithms
 	- Lexorank
 	- CRDT/OT
-### Learn
-- Compression
-- Cryptography
-- Machine Learning
+- Learning
+	- Compression
+	- Cryptography
+	- Machine Learning
 - Languages
 	- Rust
 	- C(++)
