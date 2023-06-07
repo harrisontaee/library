@@ -1,5 +1,7 @@
-export const isArray = (item: any): boolean => Array.isArray(item);
-export const isObject = (item: any): boolean => typeof item === "object" && !isArray(item);
+export const isNully = (item: any): boolean => item === null || item === undefined;
+export const isEmpty = (item: any): boolean => isArray(item) ? item.length === 0 : isObject(item) && Object.keys(item).length === 0;
+export const isArray = (item: any): boolean => !isNully(item) && Array.isArray(item);
+export const isObject = (item: any): boolean => !isNully(item) && typeof item === "object" && !isArray(item);
 export const toString = (item: any): string => {
 	if (item === null) return "null";
 	if (typeof item === "boolean" || typeof item === "number") return (item).toString();
