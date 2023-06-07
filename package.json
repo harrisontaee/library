@@ -1,19 +1,19 @@
 {
-  "name": "@harrisontaee/library",
-  "author": "Harrison Taee <harrisontaee@protonmail.com> (https://github.com/harrisontaee)",
-  "license": "MIT",
-  "version": "1.0.9",
-  "description": "An organised and practical collection of intriguing concepts and findings.",
-  "repository": "https://github.com/harrisontaee/library.git",
-  "homepage": "https://github.com/harrisontaee/library#readme",
-  "bugs": "https://github.com/harrisontaee/library/issues",
-  "main": "index.ts",
-  "files": [
-    "algorithms",
-    "geometry",
-    "structures",
-    "utilities",
-    "index.ts",
-    "README.md"
-  ]
+	"name": "@harrisontaee/library",
+	"author": "Harrison Taee <harrisontaee@protonmail.com> (https://github.com/harrisontaee)",
+	"license": "MIT",
+	"version": "1.0.9",
+	"description": "An organised and practical collection of intriguing concepts and findings.",
+	"repository": "https://github.com/harrisontaee/library.git",
+	"homepage": "https://github.com/harrisontaee/library#readme",
+	"bugs": "https://github.com/harrisontaee/library/issues",
+	"main": "index.ts",
+	"files": [
+		"algorithms",
+		"geometry",
+		"structures",
+		"utilities",
+		"index.ts",
+		"README.md"
+	]
 }
