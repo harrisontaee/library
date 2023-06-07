@@ -15,6 +15,7 @@
 		"structures",
 		"utilities",
 		"index.ts",
+		"LICENSE.md",
 		"README.md"
 	]
 }
