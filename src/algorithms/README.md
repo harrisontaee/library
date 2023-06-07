@@ -4,4 +4,3 @@ A collection of algorithm subcategories. Within each subcategory, algorithms are
 
 - [Sort](sort)
 - [Search](search)
-- [Leetcode](leetcode)
