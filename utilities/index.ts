@@ -1,16 +1,33 @@
-export const isNully = (item: any): boolean => item === null || item === undefined;
-export const isEmpty = (item: any): boolean => isArray(item) ? item.length === 0 : isObject(item) && Object.keys(item).length === 0;
-export const isArray = (item: any): boolean => !isNully(item) && Array.isArray(item);
-export const isObject = (item: any): boolean => !isNully(item) && typeof item === "object" && !isArray(item);
-export const toString = (item: any): string => {
-	if (item === null) return "null";
-	if (typeof item === "boolean" || typeof item === "number") return (item).toString();
-	if (typeof item === "string") return item;
-	if(typeof item === "symbol") throw new TypeError();
-	return (item).toString();
+import {toString} from "../strings";
+
+/**
+ * Returns true if the value is null or undefined.
+ */
+export const isNully = (value: any): boolean => {
+	return value === null || value === undefined;
 };
 
 
+/**
+ * Returns true if:
+ - Object: no keys
+ - Array: no items
+ - Number: 0
+ - String: ""
+ */
+export const isEmpty = (value: any): boolean => {
+	if (isNully(value)) return true;
+	switch (typeof value) {
+		case "object":
+			return Array.isArray(value) ? value.length == 0 : Object.keys(value).length == 0;
+		case "string":
+			return value.length == 0;
+		case "number":
+			return !value;
+		default:
+			return false;
+	};
+};
 
 
 
